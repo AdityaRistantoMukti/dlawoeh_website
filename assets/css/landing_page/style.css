@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    color:white;
+    font-weight: bold;
+    padding: 1em 1em;
+    font-size: 1.5rem;
+    background-color    : rgb(134, 33, 8);;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+}
+
+header nav{
+    display: flex;
+    column-gap: 1.5rem;
+    position: absolute;
+    right : 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-input{
+    padding : 0 .5rem;
+    border-radius: 1rem;
+    border : none;
+}
+
+.search-input:active{
+    border-radius: 1rem;
+    border : none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.title{
+    margin: 0 20vw;
+    margin-top : 2rem;
+    color : rgb(156, 15, 15);
+    text-align: center;
+}
+
+.mySlides{
+    object-fit: cover;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 70vh;
+}
+
+.nextBtn{
+    border-radius: .5rem;
+    position: absolute;
+    top: 60%;
+    right: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border : none;
+    padding : 1rem .5rem;
+}
+
+.prevBtn{
+    border-radius: .5rem;
+    position: absolute;
+    top: 60%;
+    left: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border : none;
+    padding : 1rem .5rem;
+}
+
+
+.slideChilds{
+    justify-content: center;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.childSlides img{
+    width: 15vw;
+    border-radius: .5rem;
+    object-fit: cover;
+    height: 20vh;
+}
+
+
+.container-main{
+    padding : 2rem;
+    color : rgb(156, 15, 15);
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem; 
+}
+.menu-list {
+    grid-template-columns: repeat(4, 1fr); 
+}
+.menu-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: aliceblue;
+    width: 100%; 
+    height: 40vh; 
+}
+
+
+.menu-card:hover img {
+    transform: scale(1.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform .2s linear;
+}
+
+.menu-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+
